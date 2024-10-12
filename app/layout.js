@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` bg-pink-600 h-screen antialiased`}>
+      <body className={` bg-pink-600 h-screen antialiased flex justify-center`}>
         <GameProvider>{children}</GameProvider>
       </body>
     </html>

@@ -130,6 +130,7 @@ function reducer(state, action) {
         },
         winner: isWinner,
         altDice: `Your score is ${state[inactivePlayer].score} Please roll the dice`,
+        isPlaying: isWinner !== "" ? false : true,
       };
     default:
       return { ...state };

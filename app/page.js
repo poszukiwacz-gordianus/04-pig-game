@@ -14,7 +14,7 @@ export default function Page() {
 
   return (
     <>
-      <div className=" grid grid-cols-2 lg:w-3/4 h-screen mx-auto lg:py-2 relative">
+      <div className=" grid grid-cols-2 w-full lg:w-[60rem] lg:items-start lg:py-2 relative">
         <Card player={playerOne} isWinner={isWinner} />
         <Card player={playerTwo} isWinner={isWinner} />
 
@@ -26,14 +26,14 @@ export default function Page() {
         />
         <Button
           content="🎲 roll dice"
-          className="bottom-36 left-1/2 -translate-x-1/2"
+          className=" top-[25rem] left-1/2 -translate-x-1/2"
           onClick={() => dispatch({ type: "rollDice" })}
           ariaLabel="roll dice"
           disabled={isWinner}
         />
         <Button
           content="📥 hold"
-          className="bottom-20 left-1/2 -translate-x-1/2"
+          className="top-[29rem] left-1/2 -translate-x-1/2"
           onClick={() => dispatch({ type: "holdScore" })}
           ariaLabel="hold score"
           disabled={isWinner}
@@ -43,7 +43,7 @@ export default function Page() {
           <Image
             src={dice}
             alt={`Dice ${altDice}`}
-            className="top-1/3 left-1/2 -translate-x-1/2 absolute w-24 h-24"
+            className=" top-44 left-1/2 -translate-x-1/2 absolute w-24 h-24"
             sizes="20vw"
           />
         ) : null}

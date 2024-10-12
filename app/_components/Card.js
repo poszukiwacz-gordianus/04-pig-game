@@ -12,7 +12,7 @@ export default function Card({
             ? "bg-pink-200"
             : "bg-pink-400 opacity-60"
         }  items-center py-24 transition-all duration-500 ${
-          number === 1 ? "rounded-s-lg" : " rounded-e-lg"
+          number === 1 ? "lg:rounded-s-lg" : " lg:rounded-e-lg"
         } `}
       >
         <h1
